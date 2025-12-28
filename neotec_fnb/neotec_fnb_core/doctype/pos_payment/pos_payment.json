@@ -1,27 +1,23 @@
 {
-    "name":  "Neotec Allocation Row",
-    "module":  "Neotec Fnb",
+    "name":  "POS Payment",
+    "module": "Neotec Fnb Core",
     "custom":  0,
     "is_submittable":  0,
     "istable":  1,
     "track_changes":  1,
     "fields":  [
                    {
-                       "fieldname":  "check",
+                       "fieldname":  "mode_of_payment",
                        "fieldtype":  "Link",
-                       "label":  "Check",
-                       "options":  "Neotec Check",
+                       "label":  "Mode of Payment",
+                       "options":  "Mode of Payment",
                        "reqd":  1
-                   },
-                   {
-                       "fieldname":  "percent",
-                       "fieldtype":  "Float",
-                       "label":  "Percent"
                    },
                    {
                        "fieldname":  "amount",
                        "fieldtype":  "Currency",
-                       "label":  "Amount"
+                       "label":  "Amount",
+                       "reqd":  1
                    }
                ],
     "permissions":  [

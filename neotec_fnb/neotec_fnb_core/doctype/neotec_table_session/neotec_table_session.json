@@ -1,6 +1,6 @@
 {
     "name":  "Neotec Table Session",
-    "module":  "Neotec Fnb",
+    "module": "Neotec Fnb Core",
     "custom":  0,
     "is_submittable":  0,
     "istable":  0,

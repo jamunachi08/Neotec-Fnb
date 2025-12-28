@@ -1,23 +1,24 @@
 {
-    "name":  "POS Order Item",
-    "module":  "Neotec Fnb",
+    "name":  "Neotec Shared Allocation",
+    "module": "Neotec Fnb Core",
     "custom":  0,
     "is_submittable":  0,
-    "istable":  1,
+    "istable":  0,
     "track_changes":  1,
     "fields":  [
+                   {
+                       "fieldname":  "session",
+                       "fieldtype":  "Link",
+                       "label":  "Session",
+                       "options":  "Neotec Table Session",
+                       "reqd":  1
+                   },
                    {
                        "fieldname":  "item_code",
                        "fieldtype":  "Link",
                        "label":  "Item",
                        "options":  "Item",
                        "reqd":  1
-                   },
-                   {
-                       "fieldname":  "item_name",
-                       "fieldtype":  "Data",
-                       "label":  "Item Name",
-                       "read_only":  1
                    },
                    {
                        "fieldname":  "qty",
@@ -27,26 +28,22 @@
                        "default":  1
                    },
                    {
-                       "fieldname":  "uom",
-                       "fieldtype":  "Link",
-                       "label":  "UOM",
-                       "options":  "UOM"
-                   },
-                   {
                        "fieldname":  "rate",
                        "fieldtype":  "Currency",
-                       "label":  "Rate"
+                       "label":  "Rate",
+                       "reqd":  1
                    },
                    {
-                       "fieldname":  "amount",
+                       "fieldname":  "total_amount",
                        "fieldtype":  "Currency",
-                       "label":  "Amount",
+                       "label":  "Total Amount",
                        "read_only":  1
                    },
                    {
-                       "fieldname":  "kitchen_station",
-                       "fieldtype":  "Data",
-                       "label":  "Kitchen Station"
+                       "fieldname":  "allocations",
+                       "fieldtype":  "Table",
+                       "label":  "Allocations",
+                       "options":  "Neotec Allocation Row"
                    }
                ],
     "permissions":  [
@@ -55,9 +52,13 @@
                             "read":  1,
                             "write":  1,
                             "create":  1,
-                            "delete":  1,
-                            "submit":  1,
-                            "cancel":  1
+                            "delete":  1
+                        },
+                        {
+                            "role":  "Sales User",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
                         }
                     ],
     "doctype":  "DocType"

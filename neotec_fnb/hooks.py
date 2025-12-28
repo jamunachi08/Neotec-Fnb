@@ -6,7 +6,7 @@ app_email = "support@neotec.ai"
 app_license = "MIT"
 
 fixtures = [
-    {"dt": "Module Def", "filters": [["name", "in", ["Neotec Fnb"]]]},
+    {"dt": "Module Def", "filters": [["name", "in", ["Neotec Fnb Core"]]]},
 
     {"dt": "Website Route", "filters": [["route", "like", "neotec-docs%"]]},
 ]

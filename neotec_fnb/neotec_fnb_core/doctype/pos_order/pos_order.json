@@ -1,6 +1,6 @@
 {
     "name":  "POS Order",
-    "module":  "Neotec Fnb",
+    "module": "Neotec Fnb Core",
     "custom":  0,
     "is_submittable":  1,
     "istable":  0,

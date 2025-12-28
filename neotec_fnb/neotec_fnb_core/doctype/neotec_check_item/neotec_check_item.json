@@ -1,6 +1,6 @@
 {
-    "name":  "KDS Ticket Item",
-    "module":  "Neotec Fnb",
+    "name":  "Neotec Check Item",
+    "module": "Neotec Fnb Core",
     "custom":  0,
     "is_submittable":  0,
     "istable":  1,
@@ -17,16 +17,28 @@
                        "label":  "Qty"
                    },
                    {
-                       "fieldname":  "station",
-                       "fieldtype":  "Data",
-                       "label":  "Station"
+                       "fieldname":  "rate",
+                       "fieldtype":  "Currency",
+                       "label":  "Rate"
                    },
                    {
-                       "fieldname":  "prep_status",
+                       "fieldname":  "amount",
+                       "fieldtype":  "Currency",
+                       "label":  "Amount"
+                   },
+                   {
+                       "fieldname":  "allocation_type",
                        "fieldtype":  "Select",
-                       "label":  "Prep Status",
-                       "options":  "Queued\nPreparing\nDone",
-                       "default":  "Queued"
+                       "label":  "Allocation Type",
+                       "options":  "Normal\nShared",
+                       "default":  "Normal"
+                   },
+                   {
+                       "fieldname":  "source_allocation",
+                       "fieldtype":  "Link",
+                       "label":  "Source Allocation",
+                       "options":  "Neotec Shared Allocation",
+                       "read_only":  1
                    }
                ],
     "permissions":  [
