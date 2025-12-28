@@ -1,0 +1,58 @@
+{
+  "name": "Neotec Table Session",
+  "module": "Neotec F&B",
+  "custom": 0,
+  "is_submittable": 0,
+  "istable": 0,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "outlet",
+      "fieldtype": "Link",
+      "label": "Outlet Warehouse",
+      "options": "Warehouse",
+      "reqd": 1
+    },
+    {
+      "fieldname": "floor",
+      "fieldtype": "Data",
+      "label": "Floor"
+    },
+    {
+      "fieldname": "table",
+      "fieldtype": "Data",
+      "label": "Table",
+      "reqd": 1
+    },
+    {
+      "fieldname": "opened_on",
+      "fieldtype": "Datetime",
+      "label": "Opened On",
+      "read_only": 1
+    },
+    {
+      "fieldname": "closed_on",
+      "fieldtype": "Datetime",
+      "label": "Closed On",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nClosed",
+      "default": "Open"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+include README.md
+recursive-include neotec_fnb *.json *.py *.js *.css *.html *.md
+recursive-include neotec_fnb/public *.*
+recursive-include neotec_fnb/www *.*
