@@ -1,38 +1,39 @@
-{
-  "name": "Neotec Allocation Row",
-  "module": "Neotec F&B",
-  "custom": 0,
-  "is_submittable": 0,
-  "istable": 1,
-  "track_changes": 1,
-  "fields": [
-    {
-      "fieldname": "check",
-      "fieldtype": "Link",
-      "label": "Check",
-      "options": "Neotec Check",
-      "reqd": 1
-    },
-    {
-      "fieldname": "percent",
-      "fieldtype": "Float",
-      "label": "Percent"
-    },
-    {
-      "fieldname": "amount",
-      "fieldtype": "Currency",
-      "label": "Amount"
-    }
-  ],
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "submit": 1,
-      "cancel": 1
-    }
-  ]
+﻿{
+    "name":  "Neotec Allocation Row",
+    "module":  "Neotec Fnb",
+    "custom":  0,
+    "is_submittable":  0,
+    "istable":  1,
+    "track_changes":  1,
+    "fields":  [
+                   {
+                       "fieldname":  "check",
+                       "fieldtype":  "Link",
+                       "label":  "Check",
+                       "options":  "Neotec Check",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "percent",
+                       "fieldtype":  "Float",
+                       "label":  "Percent"
+                   },
+                   {
+                       "fieldname":  "amount",
+                       "fieldtype":  "Currency",
+                       "label":  "Amount"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1,
+                            "submit":  1,
+                            "cancel":  1
+                        }
+                    ],
+    "doctype":  "DocType"
 }

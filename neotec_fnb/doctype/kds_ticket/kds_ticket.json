@@ -1,51 +1,52 @@
-{
-  "name": "KDS Ticket",
-  "module": "Neotec F&B",
-  "custom": 0,
-  "is_submittable": 0,
-  "istable": 0,
-  "track_changes": 1,
-  "fields": [
-    {
-      "fieldname": "pos_order",
-      "fieldtype": "Link",
-      "label": "POS Order",
-      "options": "POS Order",
-      "read_only": 1
-    },
-    {
-      "fieldname": "outlet",
-      "fieldtype": "Link",
-      "label": "Outlet Warehouse",
-      "options": "Warehouse"
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Queued\nPreparing\nReady\nServed",
-      "default": "Queued"
-    },
-    {
-      "fieldname": "items",
-      "fieldtype": "Table",
-      "label": "Items",
-      "options": "KDS Ticket Item"
-    }
-  ],
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1
-    },
-    {
-      "role": "Kitchen User",
-      "read": 1,
-      "write": 1,
-      "create": 1
-    }
-  ]
+﻿{
+    "name":  "KDS Ticket",
+    "module":  "Neotec Fnb",
+    "custom":  0,
+    "is_submittable":  0,
+    "istable":  0,
+    "track_changes":  1,
+    "fields":  [
+                   {
+                       "fieldname":  "pos_order",
+                       "fieldtype":  "Link",
+                       "label":  "POS Order",
+                       "options":  "POS Order",
+                       "read_only":  1
+                   },
+                   {
+                       "fieldname":  "outlet",
+                       "fieldtype":  "Link",
+                       "label":  "Outlet Warehouse",
+                       "options":  "Warehouse"
+                   },
+                   {
+                       "fieldname":  "status",
+                       "fieldtype":  "Select",
+                       "label":  "Status",
+                       "options":  "Queued\nPreparing\nReady\nServed",
+                       "default":  "Queued"
+                   },
+                   {
+                       "fieldname":  "items",
+                       "fieldtype":  "Table",
+                       "label":  "Items",
+                       "options":  "KDS Ticket Item"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1
+                        },
+                        {
+                            "role":  "Kitchen User",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
+                        }
+                    ],
+    "doctype":  "DocType"
 }
